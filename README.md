@@ -5,3 +5,4 @@
 - `docker-compose up` → `cargo run`で動く
 - `cargo run add todoname`でtodonameというtodoを追加
 - `cargo run`でtodo一覧が見れる
+- test
