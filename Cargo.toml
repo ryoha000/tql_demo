@@ -1,0 +1,16 @@
+[package]
+name = "postgre_demo"
+version = "0.1.0"
+authors = ["Gitea <gitea@fake.local>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "^0.4.0"
+tql = { git = "https://github.com/antoyo/tql", default-features = false, features = ["chrono", "pg"] }
+tql_macros = { git = "https://github.com/antoyo/tql" }
+
+[dependencies.postgres]
+features = ["with-chrono"]
+version = "^0.15.1"
